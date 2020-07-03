@@ -5,5 +5,5 @@ test("Checking Get Gravatar Hash", () => {
 });
 
 test("Checking Get Gravatar URL", () => {
-    expect(getGravatarUrl("gargya.aniket@gmail.com")).toBe("https://www.gravatar.com/15d4fc7c2997c7869b3a855fa01cb6d4.json");
+    expect(getGravatarUrl("gargya.aniket@gmail.com")).toBe("ttps://www.gravatar.com/15d4fc7c2997c7869b3a855fa01cb6d4.json");
 });
