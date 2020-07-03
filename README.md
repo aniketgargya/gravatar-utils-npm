@@ -3,7 +3,7 @@
 [![npm version](http://img.shields.io/npm/v/gravatar-utils.svg?style=flat)](https://npmjs.org/package/react-axios-hooks "View this project on npm")
 [![Build Status](https://travis-ci.com/aniketgargya/gravatar-utils-npm.svg?branch=master)](https://travis-ci.com/aniketgargya/gravatar-utils-npm)
 
-This npm package includes two function that take in the user's email as input. 
+This npm package makes working with Gravatar a breeze. You don't need to worry about hashing emails, just use this package.
 
 To import:
 ```javascript
@@ -29,5 +29,7 @@ To install:
 ```
 npm install gravatar-utils 
 ```
+
+More information on the Gravatar API can be found at https://www.gravatar.com/site/implement/profiles/json/.
 
 Type definitions are provided!
