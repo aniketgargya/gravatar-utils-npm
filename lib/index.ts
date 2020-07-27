@@ -8,4 +8,4 @@ export interface gravatarAvatarOptions {
     size?: number;
 }
 
-export const getGravatarAvatar = (email: string, { size }: gravatarAvatarOptions = {}): string => `https://secure.gravatar.com/avatar/${getGravatarHash(email)}?${size && `s=${size}`}`;
+export const getGravatarAvatar = (email: string, { size }: gravatarAvatarOptions = {}): string => `https://secure.gravatar.com/avatar/${getGravatarHash(email)}?${size ? `s=${size}` : ""}`;
