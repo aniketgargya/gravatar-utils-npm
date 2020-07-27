@@ -1,13 +1,12 @@
 # Gravatar Utils 
 
 [![npm version](http://img.shields.io/npm/v/gravatar-utils.svg?style=flat)](https://npmjs.org/package/react-axios-hooks "View this project on npm")
-[![Build Status](https://travis-ci.com/aniketgargya/gravatar-utils-npm.svg?branch=master)](https://travis-ci.com/aniketgargya/gravatar-utils-npm)
 
 This npm package makes working with Gravatar a breeze. You don't need to worry about hashing emails, just use this package.
 
 To import:
 ```javascript
-import { getGravatarHash, getGravatarUrl } from "gravatar-utils";
+import { getGravatarHash, getGravatarUrl, getGravatarAvatar } from "gravatar-utils";
 ```
 
 ```javascript
@@ -23,6 +22,9 @@ const gravatarProfileUrl = getGravatarUrl(userEmail);
 const data = await axios({
     url: gravatarProfileUrl 
 });
+
+// To get an image url for an avatar, use the getGravatarAvatar function. You can optionally specify the size in an object in the second function parameter.
+<img src={getGravatarAvatar("xxxxxxxxxx@xxxx.xxx", { size: 1000} )} />
 ```
 
 To install:

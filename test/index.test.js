@@ -9,5 +9,6 @@ test("Checking Get Gravatar URL", () => {
 });
 
 test("Checking Get Gravatar Avatar", () => {
-    expect(getGravatarAvatar("gargya.aniket@gmail.com")).toBe("https://secure.gravatar.com/avatar/15d4fc7c2997c7869b3a855fa01cb6d4");
+    expect(getGravatarAvatar("gargya.aniket@gmail.com")).toBe("https://secure.gravatar.com/avatar/15d4fc7c2997c7869b3a855fa01cb6d4?");
+    expect(getGravatarAvatar("gargya.aniket@gmail.com", { size: 1000 })).toBe("https://secure.gravatar.com/avatar/15d4fc7c2997c7869b3a855fa01cb6d4?s=1000");
 });
